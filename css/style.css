@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+::selection{
+    background-color: yellow;
+    color: black;
+}
+.container {
+    width: 100vw;
+    background-color: #113CFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main {
+    margin: 20px 0px;
+    color: rgb(0, 0, 0);
+    width: 600px;
+    padding: 15px;
+    background-color: #1597E5;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .main h1{
+    color: #170055;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container .main form label{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px 0px;
+}
+.container .main form input{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    margin: 8px 0px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    border:2px solid #170055;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.container .main form input::placeholder{
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: 500;
+}
+.container .main .positioning{
+    position: relative;
+    display: block;
+}
+.container .main i{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.container .main .show {
+    position: absolute;
+    top: 43px;
+    right: 16px;
+    display: none;
+}
+.container .main .hide {
+    position: absolute;
+    top: 43px;
+    right: 16px;
+}
+.container .main .copy {
+    position: absolute;
+    top: 43px;
+    right: 50px;
+    transition:all linear .4s;
+    -webkit-transition:all linear .4s;
+    -moz-transition:all linear .4s;
+    -ms-transition:all linear .4s;
+    -o-transition:all linear .4s;
+}
+.container .main .copy:hover span{
+    display: inline-block;
+}
+.container .main .copy span {
+    text-align: center;
+    position: absolute;
+    top: -43px;
+    left: -27px;
+    background-color: black;
+    color: #ffffff;
+    width: 72px;
+    height: 40px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 59% 75%, 51% 100%, 41% 74%, 0% 75%);
+    display: none;
+}
+.container .main .g-pass {
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    background-color: #170055;
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.container .main .btn {
+    margin: 15px 10px 0px 0px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    background-color: #170055;
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.container .main .msg{
+    color: rgb(255, 47, 47);
+}

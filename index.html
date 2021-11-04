@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>From Validation</h1>
+            <form>
+                <label>First Name</label>
+                <input type="text" id="first-name" placeholder="first Name">
+                <p class="msg name-msg"></p>
+                <label>Last Name</label>
+                <input type="text" id="last-name" placeholder="last Name">
+                <p class="msg last-name-msg"></p>
+                <label>User Name</label>
+                <input type="text" id="user-name" placeholder="user name">
+                <p class="msg user-name-msg"></p>
+                <label>Email</label>
+                <input type="email" id="email" placeholder="email">
+                <label class="positioning">Create Password
+                    <input type="password" id="password" placeholder="password">
+                    <button onclick="generatePass()" type="button" class="g-pass">Generate Password</button>
+                    <!-- <p class="msg pass-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ex?</p> -->
+                    <i class="fas fa-copy copy"><span class="copy-msg">copy</span></i>
+                    <i class="fas fa-eye show"></i>
+                    <i class="fas fa-eye-slash hide"></i>
+                </label>
+                <label>Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="confirm password">
+                <p class="msg confirm-pass-msg"></p>
+                <label>Phone Number</label>
+                <input type="number" id="phone-number" placeholder="phone number">
+                <p class="msg number-msg"></p>
+                <button type="submit" class="btn">Submit</button>
+                <button type="reset" class="btn">Reset</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
