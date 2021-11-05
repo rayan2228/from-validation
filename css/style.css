@@ -12,6 +12,7 @@ html,body{
 }
 .container {
     width: 100vw;
+    height: 100vh;
     background-color: #113CFC;
     display: flex;
     justify-content: center;
