@@ -11,6 +11,7 @@
     const passCopyElm = document.querySelector(".copy")
     const passShowElm = document.querySelector(".show")
     const passHideElm = document.querySelector(".hide")
+    const generatePassElm = document.querySelector(".g-pass")
     const confirmPassElm = document.querySelector("#confirm-password")
     const confirmPassMsgElm = document.querySelector(".confirm-pass-msg")
     const numberElm = document.querySelector("#phone-number")
@@ -25,6 +26,7 @@
         passCopyElm.addEventListener("click", copyPass)
         passShowElm.addEventListener("click", hidePass)
         passHideElm.addEventListener("click", showPass)
+        generatePassElm.addEventListener("click", generatePass)
         confirmPassElm.addEventListener("input", confirmPass)
         numberElm.addEventListener("input", phnNumValid)
     }
